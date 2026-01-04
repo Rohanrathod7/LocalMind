@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
       </div>
 
       <NavLink
-        to="/sign-up"
+        to="/login"
         className={({ isActive }) =>
           isActive
             ? 'bg-blue-600 text-white px-8 py-1.5 rounded-full font-medium transition-colors hover:bg-blue-700 whitespace-nowrap'

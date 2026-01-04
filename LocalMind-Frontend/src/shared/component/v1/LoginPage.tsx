@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import robotImg from '../../../assets/robot.png'
 
 const LoginPage: React.FC = () => {
@@ -73,12 +74,12 @@ const LoginPage: React.FC = () => {
                   />
                   <span className="text-gray-300 text-xs sm:text-sm">Remember me</span>
                 </label>
-                <a
-                  href="/forgot-password"
+                <Link
+                  to="/forgot-password"
                   className="text-white hover:text-gray-500 hover:underline text-xs sm:text-sm transition-all duration-200"
                 >
                   Forgot password?
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -93,12 +94,12 @@ const LoginPage: React.FC = () => {
 
           <p className="text-gray-400 text-xs sm:text-sm mt-4 sm:mt-5 md:mt-6 text-center">
             Don't have an account?{' '}
-            <a
-              href="/register"
+            <Link
+              to="/register"
               className="text-white hover:text-white hover:underline transition-all duration-200"
             >
               Create Account
-            </a>
+            </Link>
           </p>
         </div>
 
