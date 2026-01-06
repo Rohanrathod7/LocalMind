@@ -94,7 +94,7 @@ const HomePage: React.FC = () => {
         {!isLoading && features.length > 0 && (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, index) => (
-              <Card key={index} {...feature} />
+              <Card key={feature.title} {...feature} />
             ))}
           </div>
         )}
