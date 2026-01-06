@@ -46,7 +46,7 @@ export default function ForgotPassword() {
   `
 
   return (
-    <div className="min-h-screen bg-[#292828] flex flex-col items-center justify-center p-3 sm:p-4 md:p-6">
+    <div className="min-h-screen bg-[#292828] flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 pt-14 sm:pt-16 md:pt-20">
       <style>{glowStyles}</style>
 
       {/* Card Container */}
@@ -73,7 +73,7 @@ export default function ForgotPassword() {
           )}
 
           <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="flex flex-col gap-1.5">
+            <div className="flex flex-col gap-1.5 relative mb-6">
               <label className="text-gray-200 text-xs sm:text-sm font-semibold">
                 Email Address
               </label>
@@ -90,7 +90,7 @@ export default function ForgotPassword() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-gray-400 hover:bg-gray-500 text-black font-bold py-2.5 text-sm sm:text-base rounded-lg transition-colors duration-200 mt-6 sm:mt-7 md:mt-8 flex items-center justify-center gap-2"
+              className="w-full bg-white hover:bg-gray-200 text-black font-bold py-2.5 text-sm sm:text-base rounded-lg transition-colors duration-200 mt-2 flex items-center justify-center gap-2"
             >
               {loading && (
                 <svg className="animate-spin h-5 w-5" fill="none" viewBox="0 0 24 24">
