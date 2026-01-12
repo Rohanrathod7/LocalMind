@@ -74,7 +74,7 @@ class UserController {
 
       const token = UserUtils.generateToken({
         userId: user.userObj._id || '',
-        email: user.userObj.email,
+        email: user.userObj.email || validatedData.email,
         role: user.userObj.role,
       })
 

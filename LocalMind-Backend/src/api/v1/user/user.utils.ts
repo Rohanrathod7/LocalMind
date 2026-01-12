@@ -40,7 +40,7 @@ class UserUtils {
     }
   }
 
-  public static async findByEmailandCheckPassword(data: IUser) {
+  public static async findByEmailandCheckPassword(data: Partial<IUser>) {
     try {
       const user = await User.findOne({ email: data.email }).select('+password')
 
